@@ -11,8 +11,8 @@ export default function Demo3Click() {
       <h1>Eveniment onClick</h1>
       <button onClick={increment}>Apasă {x}</button>
       <p className="hint">
-        Deschide consola (F12). La fiecare click, x crește în consolă, dar pe
-        buton rămâne 0: o variabilă simplă nu redesenează ecranul.
+        Deschide consola (F12) și apasă de câteva ori. Compară numărul din
+        consolă cu cel de pe buton.
       </p>
     </>
   );
