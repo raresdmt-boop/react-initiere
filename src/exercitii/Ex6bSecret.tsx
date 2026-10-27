@@ -1,3 +1,17 @@
+import { useState } from "react";
+
 export default function Ex6bSecret() {
-  return <p>Exercițiul 6b: de rezolvat</p>;
+
+  const[visible, setVisible] = useState<boolean>(false);
+
+  return(
+    <>
+    <button onClick={() => setVisible(!visible)}>{
+      visible == true ? ("Ascunde") : ("Arată")
+      }</button>
+
+    {visible && <p>Secretul este 42.</p>}
+    </>
+  )
+  ;
 }

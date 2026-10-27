@@ -1,3 +1,16 @@
 export default function Ex3eDice() {
-  return <p>Exercițiul 3e: de rezolvat</p>;
+
+  function roll(): number {
+    return Math.floor(Math.random() * 6) + 1;
+  }
+
+  function showRoll(): void {
+    console.log(`Zarul arată: ${roll()}`);
+  }
+
+  return (
+    <>
+      <button onClick={showRoll}>Aruncă zarul</button>
+    </>
+  );
 }
