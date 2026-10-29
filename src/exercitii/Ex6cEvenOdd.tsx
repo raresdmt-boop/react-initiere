@@ -11,10 +11,10 @@ export default function Ex6cEvenOdd() {
     value= {n}
     onChange={(e) => setN(Number(e.target.value))}
     />
-    { n % 2 == 0 ? (
-      <p>"Par"</p>
+    { n % 2 === 0 ? (
+      <p>Par</p>
       ) : (
-      <p>"Impar"</p>
+      <p>"mpar</p>
         ) }
     { n < 0 && <p className="red">Număr negativ</p>}
 

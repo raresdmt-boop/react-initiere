@@ -12,7 +12,6 @@ export default function Ex6eLogin() {
   function login(): void {
     if(username === "admin" && password === "1234") {
       setLoggedIn(true);
-      
     }
     else {
       setError(true)
